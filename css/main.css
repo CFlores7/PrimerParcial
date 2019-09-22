@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+/* El CSS siguiente esta pensando primero para moviles y luego para 
+   Escritiorio*/
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(0.5em + 1vh);
+}
+
+/* El estilo base para moviles */
+body {
+    background-color: #112935;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8em;
+    padding-right: 0.8em;
+}
+
+.src-only {
+    display: none;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+p{
+    font-size: 0.75em;
+    padding: 1rem;
+    line-height: 25px;
+}
+
+.logo {
+    width: 90px;
+    margin: 1em;
+    margin-left: 1.7em;
+}
+
+.options {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    top: 30%;
+    right: 95%;
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+.options i:last-child {
+    font-size: 1.6rem;
+}
+
+/* Big area */
+.big-hero img {
+    width: 150px;
+}
+
+.big-hero h2 {
+    font-size: 1.875em;
+    font-weight: 700;
+    letter-spacing: 0.002em;
+    margin-top: 1em ;
+}
+
+.big-hero p {
+    font-size: 0.7em;;
+    color: #D7DEE6;
+
+}
+
+/* Social links*/
+.social-links{
+    list-style: none;
+    padding: 0;
+    margin-top: -4em;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-links li a{
+    color: #D7DEE6;
+    text-decoration: none;
+    font-size: 8em;
+    padding: 0.1em;
+}
+
+.green-area {
+    background-color: #0AC693; 
+}
+
+
+.post {
+    padding: 4em;
+    margin-bottom: -2px;
+}
+.post h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125em;
+    margin-top: -2em;
+    margin-bottom: 1em;
+}
+
+.post ul {
+    list-style: none;
+}
+
+.post ul li {
+    min-height: 300px;
+    max-width: 475px;
+    margin: 2rem auto;
+}
+
+.post ul li article {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+.post article img{
+    height: 185px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.post article h3 {
+    color: #0D5061;
+    margin-top: 0.6em;
+    margin-bottom: -0.4em;
+    padding: 0em 1rem;
+    font-size: 1.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post article p {
+    color:#112935;
+    font-size: 0.75em;
+    padding: 1rem;
+    line-height: 25px;
+}
+
+/* About */
+
+.about{
+    margin-top: 2em;
+}
+
+.about h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125em;
+    margin: 2em;
+}
+
+.bio-info img{
+   width: 160px;
+}
+
+.bio-info p{
+    font-size: 16px;
+    padding: 4em;
+    text-align: left;
+    line-height: 25px;
+    letter-spacing: 2px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: bold;
+    padding: 0px 1em;
+    padding-bottom: 3em;
+
+}
+
+.contact * + * {
+    margin-top: 1.5em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 1rem 2rem;
+    height: 50px;
+    border: none;
+    border-radius: 0px 2em;
+    font-size: 1.2em;
+    width: 100%;
+    margin-top: 15px;
+}
+/*Ajuste de alto de espacio de texto "mensaje"*/
+#message{
+    height: 180px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Decorando placeholder */
+
+::-webkit-input-placeholder { 
+    color: #D7DEE6; 
+} 
+ 
+:-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
+ 
+::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
+ 
+:-ms-input-placeholder { color: #D7DEE6; }
+
+.contact-form input[type=submit] {
+    background-color: #F74442;
+    font-weight: 400;
+    color: white;
+    font-size: 1rem;
+    margin-top: 1.2em;
+}
+
+.black-decoration{
+    background-image: url("../images/decoracion_oscura_small.svg");
+}
+
+footer{
+    background-color: #0D5061;
+    color:#D7DEE6;
+    margin-bottom: -3em;
+}
+
+footer .social-links {
+    margin: 0;
+}
+footer .social-links li a{
+    font-size: 9em;
+    margin-right: 8px;
+}
+.menu {
+    background-color: #112935;
+    position: absolute;
+    z-index: 20;
+    top: 60px;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+}
+
+.menu {
+    list-style: none;
+    text-align: left;
+    padding: 1em;
+}
+.menu li {
+    display: block;
+    padding: 0.5em;
+    margin-top: 5px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+/* Pesonalizando estilo para tablets*/
+@media only screen and (min-width: 768px) {
+  
+    .post ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .post ul li {
+        min-height: 350px;
+        max-height: 3500px;
+        margin: 1rem 2rem;
+        flex: 1 0 300px;
+    }
+
+
+    .logo {
+        width: 150px;
+        margin: 1.5em;
+    }
+
+    .show-desktop {
+        display: block;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .menu {
+        background-color: #112935; 
+        position: static;
+        z-index: 20;
+        width: auto;
+        height:auto;
+        display: flex;
+        margin-top: 1em;
+    }
+
+
+
+    /*TODO: FALTA CSS */
+} 
+
+@media only screen and (min-width: 1024px) {
+
+       /*TODO: FALTA CSS */
+    .show-desktop{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    /*TODO: FALTA CSS */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+         
+.header{
+    margin-top: -0.5em;
+    margin-right: 0;
+    margin-left: 0;
+}
+/*Cambio de color al pasar sobre opciones del menu*/  
+.menu li a:hover{
+    color: red;
+}
+.menu{
+    margin-top: 0;
+    padding-right: 0;
+    font-size: 1.6em;
+}
+/*estableciendo medidas y ubicacion de los links y flecha*/
+.social-links{
+    margin-top: -4.8em;
+    margin-bottom: -3em;
+}
+
+.social-links li a{
+    font-size: 10em;
+    padding: 0.15em;
+}
+
+a.hide-mobile.show-desktop{
+    font-size: 7em;
+    margin-top: 0;
+    color: #0AC693;
+    margin-bottom: 0.8em;
+}
+/*Publicaciones*/
+.green-area {
+    display: flex;
+    background-color: #0AC693; 
+}
+.container.post{
+    width: 100%;
+}
+.post {
+    justify-content: center;
+    padding: 4em;
+    margin-bottom: -1.5em;
+    padding-bottom: 0.8em;
+}
+
+.post ul li {
+    margin: 3.4rem;
+    margin-top: 0.5em;
+    flex: 1 0 auto;
+}
+
+.post ul li article {
+    height:380px;
+    width: 310px;
+}
+
+.post article img{
+    height: 162px;
+}
+
+/*About me*/
+.about>.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin: 2em;
+    margin-top: 0em;
+    flex: 0 1 100%;
+}
+
+.bio-info img{
+   width: 170px;
+}
+
+.bio-info p{
+    font-size: 14px;
+    padding: 3em 1.5em;
+    padding-left: 1.9em;
+    text-align: left;
+    line-height: 19px;
+    letter-spacing: 0px;
+}
+.bio-info{
+    flex: 1 0 50%;
+}
+
+.contact * + * {
+    margin-top: 1.5em;
+}
+/*Posicionamiento de barras de informacion*/
+.contact-form {
+    padding-left: 5em;
+    padding-right: 0em;
+}
+/*Barras para escribir*/
+.contact-form input, .contact-form textarea{
+    height: 43px;
+    border-radius: 0px 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    width: 100%;
+}
+
+.contact-form input[type=submit] {
+    padding: 0.1em;
+    width: 185px;
+    font-size: 0.9rem;
+}
+
+#message{
+    height: 140px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact{
+    flex: 1 0 50%;
+}
+
+}
+
+@media only screen and (min-width: 1924px) {
+
+    /*TODO: FALTA CSS */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1924px;
+    }
+.body{
+    font-family: 'Montserrat', sans-serif;
+}
+    /*Cambio de color al pasar sobre opciones del menu*/       
+.header{
+    margin-top: -0.5em;
+    margin-right: 0;
+    margin-left: 0;
+}
+.logo{
+    width: 200px;
+}
+.big-hero h2{
+    font-size: 2.25em;
+}
+.big-hero p{
+    font-size: 0.9em;
+}   
+.big-hero img{
+    width: 225px;
+}
+
+.menu li a:hover{
+    color: red;
+}
+.menu{
+    margin-top: 0;
+    padding-right: 0;
+    font-size: 1.6em;
+}
+/*estableciendo medidas y ubicacion de los links y flecha*/
+.social-links{
+    margin-top: -4.8em;
+    margin-bottom: -3em;
+}
+
+.social-links li a{
+    font-size: 10em;
+    padding: 0.15em;
+}
+
+a.hide-mobile.show-desktop{
+    font-size: 7em;
+    margin-top: 0;
+    color: #0AC693;
+    margin-bottom: 0.8em;
+}
+/*Publicaciones*/
+.green-area {
+    display: flex;
+    background-color: #0AC693; 
+}
+.container.post{
+    width: 100%;
+}
+.post {
+    justify-content: center;
+    padding: 4em;
+    margin-bottom: -1.5em;
+    padding-bottom: 0.8em;
+}
+
+.post ul li {
+    margin: 3.4rem;
+    margin-top: 0.5em;
+    flex: 1 0 auto;
+}
+
+.post ul li article {
+    height:500px;
+    width: 425px;
+}
+
+.post article img{
+    height: 240px;
+}
+.post article p{
+    padding-left: 1.5em;
+    padding-right: 1.5em; 
+}
+.post article h3{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/*About me*/
+.about>.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.about h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin: 2em;
+    margin-top: 0em;
+    flex: 0 1 100%;
+}
+
+.bio-info img{
+   width: 250px;
+}
+
+.bio-info p{
+    font-size: 20px;
+    line-height: 28px;
+}
+.bio-info{
+    flex: 1 0 50%;
+}
+
+.contact * + * {
+    margin-top: 1.5em;
+}
+/*Posicionamiento de barras de informacion*/
+.contact-form {
+    padding-left: 5em;
+    padding-right: 0em;
+}
+/*Barras para escribir*/
+.contact-form input, .contact-form textarea{
+    height: 55px;
+    border-radius: 0px 1.4em;
+}
+
+.contact-form input[type=submit] {
+    width: 210px;
+    height: 60px;
+    font-size: 1rem;
+}
+
+#message{
+    height: 250px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact{
+    flex: 1 0 50%;
+}
+
+}
