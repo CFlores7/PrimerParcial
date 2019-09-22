@@ -17,7 +17,7 @@ body {
     text-align: center;
     font-weight: 400;
 }
-
+/*El header del dispositivo*/
 .header {
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@ p{
     margin: 1em;
     margin-left: 1.7em;
 }
-
+/*Menu de navegacion*/
 .options {
     color: inherit;
     text-decoration: none;
@@ -90,23 +90,25 @@ p{
     flex-direction: row;
     justify-content: center;
 }
-
+/*contenedor de los logos de redes sociales*/
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 8em;
     padding: 0.1em;
 }
-
+/*Apartado de Publicaciones*/
 .green-area {
     background-color: #0AC693; 
 }
 
-
+/*Medidas iniciales del listado de publicaciones*/
 .post {
     padding: 4em;
     margin-bottom: -2px;
 }
+
+/*Titulo de publicaciones*/
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -115,16 +117,19 @@ p{
     margin-bottom: 1em;
 }
 
+/*lista de publicaciones*/
 .post ul {
     list-style: none;
 }
 
+/*tamaño predeterminado para cada item*/
 .post ul li {
     min-height: 300px;
     max-width: 475px;
     margin: 2rem auto;
 }
 
+/*diseño de la caja de cada item*/
 .post ul li article {
     overflow: hidden;
     border-radius: 10px;
@@ -133,12 +138,14 @@ p{
     padding-bottom: 2em;
 }
 
+/*medidas para imagen de los items*/
 .post article img{
     height: 185px;
     width: 100%;
     object-fit: cover;
 }
 
+/*diseño de fuente para titulo de item*/
 .post article h3 {
     color: #0D5061;
     margin-top: 0.6em;
@@ -150,6 +157,7 @@ p{
     text-overflow: ellipsis;
 }
 
+/*texto descriptivo de los articulos*/
 .post article p {
     color:#112935;
     font-size: 0.75em;
@@ -170,10 +178,12 @@ p{
     margin: 2em;
 }
 
+/*tamaño para imagen*/
 .bio-info img{
    width: 160px;
 }
 
+/*diseño de fuente para texto*/
 .bio-info p{
     font-size: 16px;
     padding: 4em;
@@ -182,6 +192,7 @@ p{
     letter-spacing: 2px;
 }
 
+/*plantilla para inputs*/
 .contact {
     display: flex;
     flex-direction: column;
@@ -230,6 +241,7 @@ p{
  
 :-ms-input-placeholder { color: #D7DEE6; }
 
+/*diseño boton "contactar"*/
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -252,15 +264,19 @@ footer .social-links {
     margin: 0;
 }
 
+/*reduccion de tamaño del footer*/
 footer .social-links li{
     margin: -4.5em 0em -2.3em;
     font-size: 15px;
 }
 
+/*estableciendo tamaño de logos*/
 footer .social-links li a{
     font-size: 9em;
     margin-right: 8px;
 }
+
+/*diseño de apartado menu para movil*/
 .menu {
     background-color: #112935;
     position: absolute;
@@ -290,14 +306,15 @@ footer .social-links li a{
 
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
-  
+
+    /*diseño de apartado de publicaciones*/
     .post ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+    /*dimensiones de los items*/
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
@@ -305,12 +322,13 @@ footer .social-links li a{
         flex: 1 0 300px;
     }
 
-
+    /*tamaño de logo*/
     .logo {
         width: 150px;
         margin: 1.5em;
     }
 
+    
     .show-desktop {
         display: block;
     }
@@ -329,19 +347,53 @@ footer .social-links li a{
         margin-top: 1em;
     }
 
-
-
-    /*TODO: FALTA CSS */
+    /*mostrar about en 2 columnas*/
+    .about>.container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /*diseño de items del about y bio*/
+    .about h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.4em;
+        margin: 2em;
+        margin-top: 0em;
+        flex: 0 1 100%;
+    }
+    
+    .bio-info img{
+       width: 130px;
+    }
+    
+    .bio-info p{
+        font-size: 14px;
+        padding: 3em 1.5em;
+        padding-left: 1.9em;
+        text-align: left;
+        line-height: 19px;
+        letter-spacing: 0px;
+    }
+    .bio-info{
+        flex: 1 0 50%;
+    }
+    
+    .contact * + * {
+        margin-top: 1.5em;
+    }
 } 
 
+/*       Personalizando diseño para iPad Pro      */
 @media only screen and (min-width: 1024px) {
 
-       /*TODO: FALTA CSS */
+    /*Los items dentro de la pantalla de tablet se repiten dentro de esta*/
+
+
 }
 
+/*        DISEÑO PARA ESCRITORIO            */
 @media only screen and (min-width: 1440px) {
-
-    /*TODO: FALTA CSS */
     .container {
         width: 80%;
         margin: 0 auto;
@@ -470,30 +522,34 @@ a.hide-mobile.show-desktop{
     height: 140px;
     font-family: 'Montserrat', sans-serif;
 }
-
+/*distribucion dentro del container para utilizar la mitad de el*/
 .contact{
     flex: 1 0 50%;
 }
 
 }
 
+/*       DISEÑO PARA ESCRITORIO 1924px     */
 @media only screen and (min-width: 1924px) {
 
-    /*TODO: FALTA CSS */
+    /*dimensiones de pantalla*/
     .container {
         width: 90%;
         margin: 0 auto;
         max-width: 1924px;
     }
+/*tipo de fuente para todo el sitio*/
 .body{
     font-family: 'Montserrat', sans-serif;
 }
-    /*Cambio de color al pasar sobre opciones del menu*/       
+/*subiendo header*/     
 .header{
     margin-top: -0.5em;
     margin-right: 0;
     margin-left: 0;
 }
+
+/*nuevo tamaño para items*/
 .logo{
     width: 200px;
 }
@@ -507,9 +563,8 @@ a.hide-mobile.show-desktop{
     width: 225px;
 }
 
-.menu li a:hover{
-    color: red;
-}
+
+/*cambiando tamaño de fuente del menu en header*/
 .menu{
     margin-top: 0;
     padding-right: 0;
@@ -525,21 +580,26 @@ a.hide-mobile.show-desktop{
     font-size: 10em;
     padding: 0.15em;
 }
-
+/*estilo de flecha debajo de social-links*/
 a.hide-mobile.show-desktop{
     font-size: 7em;
     margin-top: 0;
     color: #0AC693;
     margin-bottom: 0.8em;
 }
+
 /*Publicaciones*/
 .green-area {
     display: flex;
     background-color: #0AC693; 
 }
+
+/*utilizando ancho total de pantalla*/
 .container.post{
     width: 100%;
 }
+
+/*espacios dentro del contenedor de publicaciones*/
 .post {
     justify-content: center;
     padding: 4em;
@@ -547,12 +607,14 @@ a.hide-mobile.show-desktop{
     padding-bottom: 0.8em;
 }
 
+/*diseño de cada item*/
 .post ul li {
     margin: 3.4rem;
     margin-top: 0.5em;
     flex: 1 0 auto;
 }
 
+/*medidas de cada articulo*/
 .post ul li article {
     height:500px;
     width: 425px;
@@ -576,13 +638,15 @@ a.hide-mobile.show-desktop{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+/*estilo del titulo About Me*/
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.4em;
     margin: 2em;
     margin-top: 0em;
-    flex: 0 1 100%;
+    flex: 0 1 100%; /*tamaño dentro del container para utilizar el ancho de la pantalla*/
 }
 
 .bio-info img{
@@ -617,13 +681,11 @@ a.hide-mobile.show-desktop{
     font-size: 1rem;
 }
 
+/*tamaño del espacio para texto "message"*/
 #message{
     height: 250px;
     font-family: 'Montserrat', sans-serif;
 }
 
-.contact{
-    flex: 1 0 50%;
-}
 
 }
