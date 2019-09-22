@@ -75,7 +75,7 @@ p{
 }
 
 .big-hero p {
-    font-size: 0.7em;;
+    font-size: 0.9em;;
     color: #D7DEE6;
 
 }
@@ -251,6 +251,12 @@ footer{
 footer .social-links {
     margin: 0;
 }
+
+footer .social-links li{
+    margin: -4.5em 0em -2.3em;
+    font-size: 15px;
+}
+
 footer .social-links li a{
     font-size: 9em;
     margin-right: 8px;
@@ -331,9 +337,6 @@ footer .social-links li a{
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
-    .show-desktop{
-        display:none;
-    }
 }
 
 @media only screen and (min-width: 1440px) {
